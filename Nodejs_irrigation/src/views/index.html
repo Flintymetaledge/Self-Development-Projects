@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="CSS/style.css" />
+    <title>LARSEN Irigation</title>
+  </head>
+  <body>
+    <div id="banner">
+      <p>LARSENET automation</p>
+    </div>
+    <div id="page-content">
+      <div class="control-card">
+        <div class="card-header">
+          <p>Water Irigation Controls</p>
+        </div>
+        <div class="card-body">
+          <form id="irrigation-form" action="/system_input" method="POST">
+            <div class="toggle">
+              <span>Station 1:</span>
+              <label class="toggle-container">
+                <input type="checkbox" id="t1" name="Tap1" />
+                <span class="toggle-slider"></span>
+              </label>
+            </div>
+            <br />
+
+            <div class="toggle">
+              <span>Station 2:</span>
+              <label class="toggle-container">
+                <input type="checkbox" id="t2" name="Tap2" />
+                <span class="toggle-slider"></span>
+              </label>
+            </div>
+            <br />
+
+            <div class="toggle">
+              <span>Station 2:</span>
+              <label class="toggle-container">
+                <input type="checkbox" id="t3" name="Tap3" />
+                <span class="toggle-slider"></span>
+              </label>
+            </div>
+            <br />
+
+            <div class="toggle">
+              <span>Station 4:</span>
+              <label class="toggle-container">
+                <input type="checkbox" id="t4" name="Tap4" />
+                <span class="toggle-slider"></span>
+              </label>
+            </div>
+            <br />
+
+            <div class="toggle">
+              <span>Station 5:</span>
+              <label class="toggle-container">
+                <input type="checkbox" id="t5" name="Tap5" />
+                <span class="toggle-slider"></span>
+              </label>
+            </div>
+            <br />
+
+            <div class="toggle">
+              <span>Station 6:</span>
+              <label class="toggle-container">
+                <input type="checkbox" id="t6" name="Tap6" />
+                <span class="toggle-slider"></span>
+              </label>
+            </div>
+            <br />
+
+            <div id="textTest"></div>
+          </form>
+        </div>
+        <div id="card-footer"></div>
+      </div>
+    </div>
+    <script src="JS/script.js"></script>
+  </body>
+</html>

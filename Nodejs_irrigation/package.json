@@ -1,0 +1,18 @@
+{
+  "dependencies": {
+    "body-parser": "^1.19.1",
+    "express": "^4.17.2",
+    "socket.io": "^4.4.1",
+    "ws": "^8.4.2"
+  },
+  "name": "nodejs_irrigation",
+  "version": "1.0.0",
+  "main": "webserver.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node webserver.js"
+  },
+  "author": "Eric Larsen",
+  "license": "ISC",
+  "description": "App used to control irrigation."
+}

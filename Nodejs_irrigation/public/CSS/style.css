@@ -1,0 +1,97 @@
+:root {
+  --accent: #04da97;
+  --banner-height: 100px;
+  background-color: grey;
+}
+
+#banner {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  background-color: var(--accent);
+  border: 1px solid black;
+  width: 100vw;
+  height: var(--banner-height);
+}
+#banner > p {
+  font-size: 2rem;
+  margin-left: 30px;
+}
+
+#page-content {
+  margin-top: var(--banner-height);
+  padding: 1rem;
+}
+
+.control-card {
+  border: 2px solid var(--accent);
+  border-radius: 1em;
+  padding: 0.5em;
+  max-width: 20rem;
+  background-color: white;
+}
+
+.card-header {
+  font-size: 1.5rem;
+  border-bottom: 2px solid black;
+}
+
+.card-body {
+  padding: 10px;
+  text-align: left;
+  text-transform: capitalize;
+}
+
+.toggle {
+  display: block;
+}
+.toggle > span {
+  font-size: 1.5rem;
+}
+.toggle-container {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 25px;
+  padding-top: 5px;
+}
+
+.toggle-container input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.toggle-slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 25px;
+  width: 50px;
+  border-radius: 1em;
+  background-color: grey;
+  transition: 0.4s;
+}
+.toggle-slider::before {
+  position: absolute;
+  content: '';
+  left: 2.5px;
+  bottom: 2.5px;
+  height: 20px;
+  width: 20px;
+  background-color: white;
+  border-radius: 50%;
+  transition: 0.4s;
+}
+
+input:checked + .toggle-slider {
+  background-color: #04da97;
+  box-shadow: 0px 0px 15px #04da97;
+}
+
+input:checked + .toggle-slider::before {
+  transform: translateX(25px);
+}
